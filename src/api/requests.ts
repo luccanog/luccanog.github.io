@@ -4,10 +4,11 @@ const instance = axios.create({
     baseURL: 'https://api.github.com'
 });
 
-export const getRepos = () => {
-    instance.get('/users/luccanog/repos')
+export const getRepos = async () => {
+    const repos: Array<Repos> = [];
+
+    await instance.get('/users/luccanog/repos')
         .then((response) => {
-            const repos: Array<Repos> = [];
 
             response.data.map((element: any) => {
                 repos.push(
@@ -20,20 +21,25 @@ export const getRepos = () => {
                     }
                 )
             })
-            return repos;
+
+            console.log(repos);
         })
         .catch(function (error: any) {
             console.warn('Error while retrieving GitHub data', error);
         });
+
+    return repos;
 }
 
-export const getProfile = () => {
-    instance.get('/users/luccanog')
+export const getProfile = async () => {
+    let user = {};
+
+    await instance.get('/users/luccanog')
         .then((response) => {
 
             const { login, html_url, avatar_url, created_at, name, bio } = response.data;
 
-            const user: User = {
+            user = {
                 login: login,
                 name: name,
                 nick: login,
@@ -42,14 +48,12 @@ export const getProfile = () => {
                 bio: bio,
                 createdAt: created_at,
             }
-
             console.log(user);
-
-            return user;
-
-
         })
         .catch(function (error: any) {
             console.warn('Error while retrieving GitHub data', error);
         });
+
+    return user as User;
+
 }
