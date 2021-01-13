@@ -1,7 +1,7 @@
-import { getRepos } from './../api/requests';
 import { Component, OnInit } from '@angular/core';
 import { Repos, User } from 'src/interfaces';
 import * as Requests from '../api/requests';
+import { userInfo } from 'os';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,19 +9,21 @@ import * as Requests from '../api/requests';
 })
 
 export class AppComponent implements OnInit {
+  user:any= {};
+  repos: any= [];
   ngOnInit(): void {
 
-    let user: User;
-    let repos: Array<Repos>
+
 
     const loadData = async () => {
       console.log('Getting api data...')
-      repos = await Requests.getRepos();
-      user = await Requests.getProfile();
+      this.repos = await Requests.getRepos();
+      this.user = await Requests.getProfile();
     }
 
     loadData();
   }
-  title = 'luccanog';
+
+  title = `lorem`;
 
 }
