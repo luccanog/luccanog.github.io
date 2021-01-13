@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "luccanog"
+  "defaultProject": "luccanog",
+  "cli": {
+    "analytics": "b84ffa21-e09a-4fe9-9bd6-74c68fdffc7e"
+  }
 }

@@ -3,6 +3,7 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
+import * as Requests from './api/requests';
 
 if (environment.production) {
   enableProdMode();
@@ -10,3 +11,10 @@ if (environment.production) {
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
+
+  const foo = async () => {
+    console.log('entrou aqui')
+    await Requests.getRepos();
+   }
+ 
+foo();
