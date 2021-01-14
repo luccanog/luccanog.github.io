@@ -5,7 +5,7 @@
 
 .social-media{
   padding: 20px 30px;
-  
+  width:100%;
 }
 
 .desc{
@@ -28,10 +28,24 @@
   margin-left: auto;
   margin-right: auto;
   width: 40%;
+
 }
 
 .social-media a:hover{
-    opacity: 0.5;
+    transform: translateY(-3px);
+}
+
+#linkedin:hover{
+color:#0e76a8
+}
+
+#apple:hover{
+color: #37b0ef;
+
+}
+
+#google:hover{
+color:#176bef
 }
 
 .title{

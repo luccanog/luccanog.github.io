@@ -133,14 +133,22 @@ body {
     border-radius: 8px;
     // min-width: auto;
     min-height:350px;
-    max-width: 700px;
+    max-width: 650px;
     min-width: 250px;
     position: relative;
     box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
   }
 
+  .sub-content{
+    border: none;
+    border-radius: 8px;
+    // min-width: auto
+    max-width: 650px;
+    min-width: 250px;
+  }
+
 .card-text{
-   padding: 0 25px;
+   padding: 0 35px;
   }
 
   a,
@@ -164,7 +172,7 @@ body {
 
 
     /* Responsive Styles */
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 750px) {
   .card.highlight-card {
       flex-direction: column;
       }

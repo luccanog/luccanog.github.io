@@ -11,7 +11,7 @@
 
     </div>
 
-    <div fxLayout="column" fxLayoutAlign="space-between" class="card-text">
+    <div fxLayout="column" fxLayoutAlign="space-between stretch"  class="card-text">
       <h1>{{ user.name }}</h1>
       <a href="{{this.user.url}}" target="_blank" title="Go to LinkedIn Git Hub profile">
         <span>@{{ user.login }}</span>
@@ -25,14 +25,14 @@
         This web page is done in Angular and is fed by Git Hub API.
       </span>
 
-      <div fxLayout="row" fxLayoutAlign="space-between" class="social-media">
-        <a target="_blank" href="https://www.linkedin.com/in/lucca-nogueira-1b58a3103/">
+      <div fxLayout="row" fxLayoutAlign="end end" fxFlexAlign="end" class="social-media">
+        <a id="linkedin" target="_blank" href="https://www.linkedin.com/in/lucca-nogueira-1b58a3103/">
           <fa-icon [icon]="linkedin" size="3x"></fa-icon>
         </a>
-        <a target="_blank" href="https://apps.apple.com/br/developer/lucca-lima/id1539580606">
+        <a id="apple" target="_blank" href="https://apps.apple.com/br/developer/lucca-lima/id1539580606">
           <fa-icon [icon]="apple" size="3x"></fa-icon>
         </a>
-        <a target="_blank" href="https://play.google.com/store/apps/developer?id=Lucca+Nogueira">
+        <a id="google" target="_blank" href="https://play.google.com/store/apps/developer?id=Lucca+Nogueira">
           <fa-icon [icon]="google" size="3x"></fa-icon>
         </a>
         <!-- TAMANHOS: fa-xs fa-sm fa-lg fa-2x fa-3x fa-5x fa-7x fa-10x -->
