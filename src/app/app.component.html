@@ -7,15 +7,16 @@
         <img class="profile-photo" src="{{ this.user.photo }}" />
       </a>
 
-      <span class="bio-text" fxFlexAlign="center">"{{ user.bio }}"</span>
 
     </div>
 
     <div fxLayout="column" fxLayoutAlign="space-between stretch"  class="card-text">
       <h1>{{ user.name }}</h1>
-      <a href="{{this.user.url}}" target="_blank" title="Go to LinkedIn Git Hub profile">
+      <a href="{{this.user.url}}"title="Go to LinkedIn Git Hub profile" target="_blank" title="Go to LinkedIn Git Hub profile">
         <span>@{{ user.login }}</span>
       </a>
+      <span>{{ user.bio }}.</span>
+
       <span class="desc" fxLayout="row">
         I`m a back-end developer, but I use to study front-end technologies in
         my free time. I've been working with node.js and .NET core.
