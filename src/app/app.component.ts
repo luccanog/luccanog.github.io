@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as Requests from '../api/requests';
+import { faLinkedin, faAppStoreIos, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,6 +8,11 @@ import * as Requests from '../api/requests';
 })
 
 export class AppComponent implements OnInit {
+
+  linkedin = faLinkedin;
+  google = faGooglePlay;
+  apple = faAppStoreIos;
+
   user:any= {};
   repos: any= [];
   ngOnInit(): void {
@@ -21,5 +27,4 @@ export class AppComponent implements OnInit {
   }
 
   title = `lorem`;
-
 }

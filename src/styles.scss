@@ -122,16 +122,18 @@
     background-color: #333;
     color: white;
     font-weight: 600;
+    padding: 15px 30px;
     border: none;
     border-radius: 8px;
     width: auto;
     height:300px;
-    min-width: 70%;
+    width: 70%;
+    min-width: 600px;
     position: relative;
   }
 
-  .card.card.highlight-card span {
-    margin-left: 60px;
+.card-text{
+    padding-left: 60px;
   }
 
   svg#rocket {
@@ -271,10 +273,6 @@
     .card:not(.highlight-card) {
       height: 16px;
       margin: 8px 0;
-    }
-
-    .card.highlight-card span {
-      margin-left: 72px;
     }
 
     svg#rocket-smoke {

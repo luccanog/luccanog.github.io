@@ -1,4 +1,5 @@
 import axios, { AxiosResponse } from 'axios';
+import * as moment from 'moment'
 import { Repos, User } from '../interfaces/index'
 const instance = axios.create({
     baseURL: 'https://api.github.com'
@@ -14,7 +15,7 @@ export const getRepos = async () => {
                 repos.push(
                     {
                         description: element.description || '',
-                        createdAt: element.created_at,
+                        createdAt: moment(element.created_at).toLocaleString(),
                         url: element.url,
                         name: element.name,
                         language: element.language
@@ -46,7 +47,7 @@ export const getProfile = async () => {
                 photo: avatar_url,
                 url: html_url,
                 bio: bio,
-                createdAt: created_at,
+                createdAt: moment(created_at).toLocaleString(),
             }
             console.log(user);
         })
