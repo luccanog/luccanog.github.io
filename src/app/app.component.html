@@ -7,21 +7,10 @@
       </a>
 
       <span class="bio-text" fxFlexAlign="center">"{{ user.bio }}"</span>
-      <div fxLayout="row" fxLayoutAlign="space-between" class="social-media">
-        <a  target="_blank" href="https://www.linkedin.com/in/lucca-nogueira-1b58a3103/">
-          <fa-icon [icon]="linkedin" size="3x"></fa-icon>
-        </a>
-        <a  target="_blank" href="https://apps.apple.com/br/developer/lucca-lima/id1539580606">
-          <fa-icon [icon]="apple" size="3x"></fa-icon>
-        </a>
-        <a  target="_blank" href="https://play.google.com/store/apps/developer?id=Lucca+Nogueira">
-          <fa-icon [icon]="google" size="3x"></fa-icon>
-        </a>
-        <!-- TAMANHOS: fa-xs fa-sm fa-lg fa-2x fa-3x fa-5x fa-7x fa-10x -->
-      </div>
+
     </div>
 
-    <div fxLayout="column" class="card-text">
+    <div fxLayout="column" fxLayoutAlign="space-between" class="card-text">
       <span>{{ user.name }}</span>
       <span>@{{ user.login }}</span>
       <span class="desc" fxLayout="row">
@@ -30,15 +19,26 @@
 
         Recently I've made an React Native app, and now I'm studying
         Flutter.
-        This web page is done in Angular.
+        This web page is done in Angular and is fed by Git Hub API.
       </span>
-
+      <div fxLayout="row" fxLayoutAlign="space-between" class="social-media">
+        <a target="_blank" href="https://www.linkedin.com/in/lucca-nogueira-1b58a3103/">
+          <fa-icon [icon]="linkedin" size="3x"></fa-icon>
+        </a>
+        <a target="_blank" href="https://apps.apple.com/br/developer/lucca-lima/id1539580606">
+          <fa-icon [icon]="apple" size="3x"></fa-icon>
+        </a>
+        <a target="_blank" href="https://play.google.com/store/apps/developer?id=Lucca+Nogueira">
+          <fa-icon [icon]="google" size="3x"></fa-icon>
+        </a>
+        <!-- TAMANHOS: fa-xs fa-sm fa-lg fa-2x fa-3x fa-5x fa-7x fa-10x -->
+      </div>
     </div>
   </div>
 
   <!-- Resources -->
-  <h2>Resources</h2>
-  <p>Here are some links to help you get started:</p>
+  <h2>Projects</h2>
+  <p>Here are some open source projects:</p>
 
   <div class="card-container">
     <a class="card" target="_blank" rel="noopener" href="https://angular.io/tutorial">

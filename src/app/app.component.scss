@@ -1,11 +1,12 @@
 .profile-photo{
   border-radius: 50%;
-  width:200px;
+  width:250px;
   float: left;
 }
 
 .social-media{
-  padding: 0px 20px;
+  padding: 10px 40px;
+  
 }
 
 .desc{
@@ -22,8 +23,12 @@
   text-align: justify;
 }
 
-a{
+.social-media a{
 color:white;
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }
 
 .social-media a:hover{
