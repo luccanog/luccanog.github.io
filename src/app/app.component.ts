@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as Requests from '../api/requests';
-import { faLinkedin, faAppStoreIos, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faAppStoreIos, faGooglePlay, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faArrowRight} from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,13 +9,17 @@ import { faLinkedin, faAppStoreIos, faGooglePlay } from '@fortawesome/free-brand
 })
 
 export class AppComponent implements OnInit {
-
+  /** Icons */
   linkedin = faLinkedin;
   google = faGooglePlay;
   apple = faAppStoreIos;
+  github = faGithub;
+  right = faArrowRight;
 
-  user:any= {};
-  repos: any= [];
+  /** Data */
+  user: any = {};
+  repos: any = [];
+
   ngOnInit(): void {
 
     const loadData = async () => {

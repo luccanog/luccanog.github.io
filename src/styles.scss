@@ -82,10 +82,12 @@ body {
 
   .card {
     border-radius: 4px;
-    border: 1px solid #eee;
-    background-color: #fafafa;
-    height: 40px;
-    width: 200px;
+    border: 1px solid #ddd;
+    background-color: #eee;
+    min-height: 140px;
+    // max-height: 240px;
+    min-width: 300px;
+    max-width: 400px;
     margin: 0 8px 16px;
     padding: 16px;
     display: flex;
@@ -96,14 +98,14 @@ body {
     line-height: 24px;
   }
 
+  .card .principal{
+min-width: 30%;
+max-width: 60%;
+  }
   .card-container .card:not(:last-child) {
     margin-right: 0;
   }
 
-  .card.card-big {
-    height: 16px;
-    width: 500px;
-  }
 
   .card-container .card:not(.highlight-card) {
     cursor: pointer;
@@ -119,16 +121,16 @@ body {
   }
 
   .card.highlight-card {
-    background-color: #333;
-    color: white;
+    background-color: #eee;
+    color: black;
     font-weight: 600;
     padding: 15px 30px;
     border: none;
     border-radius: 8px;
-    width: auto;
-    height:300px;
-    width: 70%;
-    min-width: 600px;
+    // min-width: auto;
+    min-height:350px;
+    max-width: 700px;
+    min-width: 630px;
     position: relative;
   }
 
@@ -152,14 +154,13 @@ body {
   }
 
   a,
-  a:visited,
-  a:hover {
-    color: #1976d2;
+  a:visited {
+    color: #333;
     text-decoration: none;
   }
 
   a:hover {
-    color: #125699;
+    opacity: 0.2;
   }
 
   .terminal {

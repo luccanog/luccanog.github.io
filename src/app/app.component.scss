@@ -1,6 +1,6 @@
 .profile-photo{
   border-radius: 50%;
-  width:250px;
+  width:275px;
   float: left;
 }
 
@@ -24,8 +24,8 @@
 }
 
 .social-media a{
-color:white;
-display: block;
+  color:#888;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 40%;
@@ -33,5 +33,12 @@ display: block;
 
 .social-media a:hover{
     opacity: 0.5;
+}
 
+.title{
+  font-weight: 700;
+  font-size: larger;
+}
+a span{
+  color:black;
 }

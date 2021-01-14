@@ -15,8 +15,8 @@ export const getRepos = async () => {
                 repos.push(
                     {
                         description: element.description || '',
-                        createdAt: moment(element.created_at).toLocaleString(),
-                        url: element.url,
+                        createdAt: moment(element.created_at).locale('pt-br').format('LL'),
+                        url: element.html_url,
                         name: element.name,
                         language: element.language
                     }
@@ -47,7 +47,6 @@ export const getProfile = async () => {
                 photo: avatar_url,
                 url: html_url,
                 bio: bio,
-                createdAt: moment(created_at).toLocaleString(),
             }
             console.log(user);
         })

@@ -24,6 +24,7 @@
     "@fortawesome/angular-fontawesome": "^0.8.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-brands-svg-icons": "^5.15.2",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "axios": "^0.21.1",
     "moment": "^2.29.1",
     "rxjs": "~6.6.0",
