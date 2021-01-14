@@ -1,3 +1,11 @@
+.title{
+  font-weight: 700;
+  font-size: larger;
+}
+a span{
+  color:black;
+}
+
 .profile-photo{
   border-radius: 50%;
   width:275px;
@@ -23,14 +31,14 @@
 }
 
 .social-media a{
-  color:#888;
+  color:#555;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
-
+  padding: 0px 2px
 }
 
+/** Buttons animation **/
 .social-media a:hover{
     transform: translateY(-3px);
 }
@@ -39,19 +47,24 @@
 color:#0e76a8
 }
 
+#github:hover{
+color:#000
+}
+
 #apple:hover{
 color: #37b0ef;
 
 }
 
 #google:hover{
-color:#176bef
+color:#DB4437;
+ animation-name: google-colors;
+  animation-duration: 4s;
 }
 
-.title{
-  font-weight: 700;
-  font-size: larger;
-}
-a span{
-  color:black;
+@keyframes google-colors {
+   0%  {color: #DB4437;}
+  25%  {color: #F4B400;}
+  50%  {color: #176bef;}
+  100% {color: #0F9D58;}
 }
