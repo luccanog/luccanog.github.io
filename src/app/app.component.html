@@ -10,33 +10,38 @@
 
     </div>
 
-    <div fxLayout="column" fxLayoutAlign="space-between stretch"  class="card-text">
+    <div fxLayout="column" fxLayoutAlign="space-between stretch" class="card-text">
       <h1>{{ user.name }}</h1>
-      <a href="{{this.user.url}}"title="Go to LinkedIn Git Hub profile" target="_blank" title="Go to LinkedIn Git Hub profile">
+      <a href="{{this.user.url}}" title="Go to LinkedIn Git Hub profile" target="_blank"
+        title="Go to LinkedIn Git Hub profile">
         <span>@{{ user.login }}</span>
       </a>
       <span>{{ user.bio }}.</span>
 
-      <span class="desc" fxLayout="row">
-        I`m a back-end developer, but I use to study front-end technologies in
-        my free time. I've been working with node.js and .NET core.
-
-        Recently I've made an React Native app, and now I'm studying
-        Flutter.
-        This web page is done in Angular and is fed by Git Hub API.
+      <span class="desc" >
+        <p>
+          I`m a back-end developer, but I use to study front-end technologies in
+          my free time. I've been working with node.js and .NET core.
+        <p>
+          Recently I've published a React Native app in both Google and Apple app stores, and now I'm studying
+          Flutter. Feel free to explore my portfolio.
+        </p>
       </span>
 
-      <div fxLayout="row" fxLayoutAlign="space-between center"  class="social-media">
-        <a id="linkedin" fxLayout="row" fxLayoutAlign="space-between center" target="_blank" href="https://www.linkedin.com/in/lucca-nogueira-1b58a3103/">
+      <div fxLayout="row" fxLayoutAlign="space-between center" class="social-media">
+        <a id="linkedin" fxLayout="row" fxLayoutAlign="space-between center" target="_blank"
+          href="https://www.linkedin.com/in/lucca-nogueira-1b58a3103/">
           <fa-icon [icon]="linkedin" size="3x"></fa-icon>
         </a>
         <a id="github" fxLayout="row" fxLayoutAlign="space-between center" target="_blank" href="{{user.url}}">
           <fa-icon [icon]="github" size="3x"></fa-icon>
         </a>
-        <a id="apple" fxLayout="row" fxLayoutAlign="space-between center" target="_blank" href="https://apps.apple.com/br/developer/lucca-lima/id1539580606">
+        <a id="apple" fxLayout="row" fxLayoutAlign="space-between center" target="_blank"
+          href="https://apps.apple.com/br/developer/lucca-lima/id1539580606">
           <fa-icon [icon]="apple" size="3x"></fa-icon>
         </a>
-        <a id="google" fxLayout="row" fxLayoutAlign="space-between center" target="_blank" href="https://play.google.com/store/apps/developer?id=Lucca+Nogueira">
+        <a id="google" fxLayout="row" fxLayoutAlign="space-between center" target="_blank"
+          href="https://play.google.com/store/apps/developer?id=Lucca+Nogueira">
           <fa-icon [icon]="google" size="3x"></fa-icon>
         </a>
         <!-- TAMANHOS: fa-xs fa-sm fa-lg fa-2x fa-3x fa-5x fa-7x fa-10x -->
@@ -56,7 +61,8 @@
     description:string;
     createdAt:string; -->
 
-    <a *ngFor="let repo of repos"  fxLayoutAlign="space-between center"  class="card" target="_blank" rel="noopener" href="{{repo.url}}">
+    <a *ngFor="let repo of repos" fxLayoutAlign="space-between center" class="card" target="_blank" rel="noopener"
+      href="{{repo.url}}">
       <fa-icon [icon]="github" size="lg" color='black'></fa-icon>
 
       <div class="principal" fxLayout="column">
@@ -75,10 +81,10 @@
 
   <!-- Footer -->
   <footer>
-    Lucca Nogueira - Jan 2021
+         Jan 2021 - <b>This web page is done in Angular and is fed by Git Hub API </b> - Lucca Nogueira
   </footer>
 
- 
+
 </div>
 
 <router-outlet></router-outlet>

@@ -57,7 +57,7 @@ color: #37b0ef;
 }
 
 #google:hover{
-color:#DB4437;
+color:#176bef;
  animation-name: google-colors;
   animation-duration: 4s;
 }
@@ -65,6 +65,6 @@ color:#DB4437;
 @keyframes google-colors {
    0%  {color: #DB4437;}
   25%  {color: #F4B400;}
-  50%  {color: #176bef;}
-  100% {color: #0F9D58;}
+  50%  {color: #0F9D58;}
+  100% {color: #176bef;}
 }
